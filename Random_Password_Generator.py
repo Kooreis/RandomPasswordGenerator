@@ -1,9 +1,2 @@
 import string
 import random
-
-def password_generator(length=8, chars=string.ascii_letters + string.digits + string.punctuation):
-    return ''.join(random.choice(chars) for _ in range(length))
-
-print("Welcome to the Random Password Generator!")
-length = int(input("Enter the length of the password: "))
-print(password_generator(length))
